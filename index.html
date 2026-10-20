@@ -41,7 +41,7 @@ h2::after{content:"";display:block;height:4px;width:0;background:linear-gradient
 .hg{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
 .kick{display:inline-block;background:var(--d);color:var(--bg);padding:5px 12px;border-radius:99px;font-weight:700;font-size:.85rem;margin-bottom:16px}
 h1{font-size:clamp(2.4rem,6.2vw,4.6rem);line-height:1;margin:0 0 18px;letter-spacing:-1.5px;font-weight:900}
-h1 em{font-style:normal;background:linear-gradient(transparent 62%,var(--a) 62% 92%,transparent 92%);padding:0 4px}
+h1 em{font-style:normal;background:linear-gradient(transparent 62%, #0066B3 62% 92%,transparent 92%);padding:0 4px}
 .sub{font-size:1.3rem;color:var(--m);max-width:560px;margin:0}
 .row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
 .tr{display:flex;gap:18px;flex-wrap:wrap;margin-top:22px;color:var(--m);font-size:.92rem;font-weight:600}
@@ -97,7 +97,7 @@ footer{padding:28px 0 90px;border-top:1px solid var(--l);color:var(--m);font-siz
 @media(prefers-reduced-motion:reduce){.cmp .ph{animation:none}.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 #wheel{height:800vh;padding:0;position:relative}
 .wp{position:sticky;top:calc(env(safe-area-inset-top,0px) + 60px);height:calc(100svh - 60px - env(safe-area-inset-top,0px));overflow:hidden;--W:min(112svh,86vw);--R:calc(var(--W)*.385);--S:clamp(52px,calc(var(--W)*.11),96px);--mono:ui-monospace,Menlo,Consolas,monospace}
-.wh-t{position:absolute;top:22px;left:max(20px,calc((100vw - 1080px)/2 + 20px));font-size:clamp(1.2rem,3vw,2rem);max-width:min(520px,52vw);margin:0}
+.wh-t{position:absolute;top:50px;left:max(20px,calc((100vw - 1080px)/2 + 20px));font-size:clamp(1.2rem,3vw,2rem);max-width:min(520px,52vw);margin:0}
 .wh-t span{background:linear-gradient(90deg,var(--a),var(--d));-webkit-background-clip:text;background-clip:text;color:transparent}
 .wheel{position:absolute;top:50%;right:calc(var(--W)/-2);width:var(--W);height:var(--W);margin-top:calc(var(--W)/-2)}
 .wheel .ring,.wheel .sweep,.wheel .core,.wheel .rot,.ticks{position:absolute;border-radius:50%;display:block}
@@ -180,7 +180,7 @@ main,footer{overflow-x:clip}
 </head>
 <body>
 <div id="bar"></div><div class="glow" aria-hidden="true"></div>
-<header><div class="w nav"><a class="logo" href="https://www.itcompany.com.au/">IT Company</a><a class="btn" href="tel:1300611786">Call 1300 611 786</a></div></header>
+<header><div class="w nav"><a class="logo" href="https://www.itcompany.com.au/"><img ></a><a class="btn" href="tel:1300611786">Call 1300 611 786</a></div></header>
 <main>
 <section class="hero"><div class="w hg">
 <div>
@@ -209,18 +209,18 @@ main,footer{overflow-x:clip}
 <div><b>🔍 Ready for Google</b><span>Clean headings, metadata, structure</span></div>
 </div></div>
 
-<div class="mq" aria-hidden="true"><div id="mq">RESPONSIVE · MOBILE-FIRST · SYDNEY · FAST · SEO-READY · RESPONSIVE · MOBILE-FIRST · SYDNEY · FAST · SEO-READY · RESPONSIVE · MOBILE-FIRST · SYDNEY · FAST · SEO-READY · RESPONSIVE · MOBILE-FIRST · SYDNEY · FAST · SEO-READY ·</div></div>
+<!--<div class="mq" aria-hidden="true"><div id="mq">RESPONSIVE · MOBILE-FIRST · SYDNEY · FAST · SEO-READY · RESPONSIVE · MOBILE-FIRST · SYDNEY · FAST · SEO-READY · RESPONSIVE · MOBILE-FIRST · SYDNEY · FAST · SEO-READY · RESPONSIVE · MOBILE-FIRST · SYDNEY · FAST · SEO-READY ·</div></div>-->
 <section id="wheel" aria-label="Our services"><div class="wp">
 <h2 class="wh-t">Everything your website needs, <span>under one roof</span></h2>
 <div class="wheel"><i class="ring r1"></i><i class="ring r2"></i><i class="ring r3"></i><i class="ring r4"></i><i class="sweep"></i><i class="core"></i><div class="rot"><i class="ticks"></i></div></div>
 <div class="pns">
-<article class="pn on"><div class="ix">// 01 · DOMAIN</div><h3>Secure Domain Management</h3><p>Secure your digital identity with fast, reliable domain registration, and migrate existing domains seamlessly.</p><a class="btn" href="https://www.itcompany.com.au/register-domain-name/">Register a domain →</a></article>
-<article class="pn"><div class="ix">// 02 · HOSTING</div><h3>Hosting</h3><p>Scalable web hosting configured for speed, redundancy and security, from WordPress to VPS.</p><a class="btn" href="https://www.itcompany.com.au/web-hosting/">Explore hosting →</a></article>
-<article class="pn"><div class="ix">// 03 · EMAIL</div><h3>Email</h3><p>Build authority with custom business email, plus Microsoft 365 and Google Workspace.</p><a class="btn" href="https://www.itcompany.com.au/email-hosting/">Explore email →</a></article>
-<article class="pn"><div class="ix">// 04 · DESIGN</div><h3>Design</h3><p>Bespoke responsive layouts built to convert visitors into clients, plus online stores and maintenance.</p><a class="btn" href="https://www.itcompany.com.au/website-designing/">Explore design →</a></article>
-<article class="pn"><div class="ix">// 05 · MARKETING</div><h3>Marketing</h3><p>Maximise your reach with SEO, Google Ads, social media and email campaigns.</p><a class="btn" href="https://www.itcompany.com.au/seo-services-australia/">Explore marketing →</a></article>
-<article class="pn"><div class="ix">// 06 · AI WORKFLOW</div><h3>AI Workflow</h3><p>Supercharge productivity with AI agents, chat assistants and automated call answering.</p><a class="btn" href="https://www.itcompany.com.au/ai-agent/">Explore AI →</a></article>
-<article class="pn"><div class="ix">// 07 · SECURITY</div><h3>Security</h3><p>Protect your site with malware scanning, SSL certificates and hacked-website repair.</p><a class="btn" href="https://www.itcompany.com.au/website-security/">Explore security →</a></article>
+<article class="pn on"><div class="ix">01</div><h3>Secure Domain Management</h3><p>Secure your digital identity with fast, reliable domain registration, and migrate existing domains seamlessly.</p><a class="btn" href="https://www.itcompany.com.au/register-domain-name/">Register a domain →</a></article>
+<article class="pn"><div class="ix">02</div><h3>Hosting</h3><p>Scalable web hosting configured for speed, redundancy and security, from WordPress to VPS.</p><a class="btn" href="https://www.itcompany.com.au/web-hosting/">Explore hosting →</a></article>
+<article class="pn"><div class="ix">03</div><h3>Email</h3><p>Build authority with custom business email, plus Microsoft 365 and Google Workspace.</p><a class="btn" href="https://www.itcompany.com.au/email-hosting/">Explore email →</a></article>
+<article class="pn"><div class="ix">04</div><h3>Design</h3><p>Bespoke responsive layouts built to convert visitors into clients, plus online stores and maintenance.</p><a class="btn" href="https://www.itcompany.com.au/website-designing/">Explore design →</a></article>
+<article class="pn"><div class="ix">05</div><h3>Marketing</h3><p>Maximise your reach with SEO, Google Ads, social media and email campaigns.</p><a class="btn" href="https://www.itcompany.com.au/seo-services-australia/">Explore marketing →</a></article>
+<article class="pn"><div class="ix">06</div><h3>AI Workflow</h3><p>Supercharge productivity with AI agents, chat assistants and automated call answering.</p><a class="btn" href="https://www.itcompany.com.au/ai-agent/">Explore AI →</a></article>
+<article class="pn"><div class="ix">07</div><h3>Security</h3><p>Protect your site with malware scanning, SSL certificates and hacked-website repair.</p><a class="btn" href="https://www.itcompany.com.au/website-security/">Explore security →</a></article>
 </div>
 <div class="hud"><b id="wn">01</b>/ 07<span class="sg"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></span>SCROLL TO EXPLORE</div>
 </div></section>
